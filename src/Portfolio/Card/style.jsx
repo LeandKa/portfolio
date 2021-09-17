@@ -3,7 +3,7 @@ import style from 'styled-components'
 export const CardBody = style.div`
   display:flex;
   flex-direction:column;
-  width:500px;
+  width:400px;
   height:350px;
   margin-left:0.5rem;
   margin-top:1.0rem;
@@ -12,10 +12,6 @@ export const CardBody = style.div`
   transition:all 0.2s ease-out;
   &:hover{
    top:-10px;
-  }
-  @media(max-width:820px){
-    height:300px;
-    width:300px;
   }
 `
 export const Img = style.img`

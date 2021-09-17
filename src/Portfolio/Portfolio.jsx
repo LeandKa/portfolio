@@ -1,39 +1,45 @@
 import React, { useEffect, useState } from 'react'
 import { Data } from '../Data'
 import Card from './Card/Card'
-import { Container, DivMain, Plus, Title } from './style'
 import {
-  Img,
-  CardBody,
-  Div,
-  DivDetails,
-  H1,
-  P,
-  DivButtons,
-  Button
-} from './Card/style'
+  AnimationRotation,
+  Container,
+  DivMain,
+  Minus,
+  MoreContent,
+  Plus,
+  PortfolioHeader,
+  Title
+} from './style'
 
 export default function Portfolio() {
-  const [isHover, setIsHover] = useState(0)
+  const [toggle, setToggle] = useState(true)
 
-  const handleMouseOver = id => {
-    console.log(id)
+  const RenderItems = () => {
+    if (!toggle) {
+      const dat = Data
+      return dat
+    } else {
+      const dat = Data.slice(0, 6)
+      return dat
+    }
   }
-
-  const handleMouseOut = () => {
-    setIsHover(0)
-  }
-
   return (
     <Container id="portfolio_me">
-      <Title>Portfolio</Title>
+      <PortfolioHeader>
+        <Title>Portfolio</Title>
+        <MoreContent toggle={toggle}>
+          {toggle ? (
+            <Plus onClick={() => setToggle(!toggle)} />
+          ) : (
+            <Minus onClick={() => setToggle(!toggle)} />
+          )}
+        </MoreContent>
+      </PortfolioHeader>
       <DivMain>
-        {Data.map((data, index) => (
+        {RenderItems().map(data => (
           <>
             <Card
-              handleMouseOut={handleMouseOut}
-              handleMouseOver={handleMouseOver}
-              select={isHover}
               key={data.id}
               id={data.id}
               img={data.img}

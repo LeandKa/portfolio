@@ -7,6 +7,14 @@ export const Container = style.div`
   margin-top:4.0rem;
 }
 `
+
+export const PortfolioHeader = style.div`
+ display:flex;
+ flex-direction:row;
+ justify-content:space-around;
+ margin:1.0rem;
+`
+
 export const Title = style.h1`
  color:${({ theme }) => theme.colors.primary};
    text-align:center;
@@ -16,51 +24,28 @@ export const Title = style.h1`
      font-size:2.0rem;
   }
 `
+export const MoreContent = style.div`
+   display:flex;
+   gap:1.0rem;
+   margin-top:1.0rem;
+   align-content:center;
+`
+export const Slide = style.div`
+  background: white;
+  width:40px;
+  height:25px;
+  position:relative;
+  left:60px;
+`
 
 export const Plus = style(AiFillPlusCircle)`
- color:white;
- &:after{
-  position: absolute;
-  display: block;
-  top: 0px;
-  left: -7px;
-  width: 0px;
-  height: 0px;
-  border-right: 7px solid rgba(0,0,0,0);
-  border-bottom: 5px solid rgba(240,245,250,1);
-  border-left: 7px solid rgba(0,0,0,0);
-);
-  -ms-transform: rotate(-70deg);
-  transform: rotate(
--70deg
-);
-  content: "";
-  opacity: 0;
- }
- &:before{
-  border-bottom: 5px solid rgba(240,245,250,1);
-  border-left: 3px solid rgba(0,0,0,0);
-  border-right: 3px solid rgba(0,0,0,0);
-  position: absolute;
-  height: 0;
-  width: 0;
-  top: -3px;
-  left: -5px;
-  display: block;
-  content: "";
-  opacity: 0;
-  -webkit-transform: rotate(
--35deg
-);
-  -ms-transform: rotate(-35deg);
-  transform: rotate(
--35deg
-);
- }
+color:white;
+ font-size:25px;
 `
 
 export const Minus = style(AiFillMinusCircle)`
  color:white;
+ font-size:25px;
 `
 
 export const DivMain = style.div`

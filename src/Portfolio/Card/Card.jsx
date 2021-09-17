@@ -10,22 +10,9 @@ import {
   Button
 } from './style'
 
-export default function Card({
-  id,
-  img,
-  isHover,
-  handleMouseOut,
-  handleMouseOver,
-  title,
-  children,
-  git,
-  link
-}) {
+export default function Card({ img, title, children, git, link }) {
   return (
-    <CardBody
-      onMouseOver={() => handleMouseOver(id)}
-      onMouseOut={handleMouseOut}
-    >
+    <CardBody>
       <Img src={img} alt="Img-Card"></Img>
       <Div>
         <DivDetails>

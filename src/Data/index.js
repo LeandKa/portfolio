@@ -64,11 +64,12 @@ export const Data = [
   },
   {
     id: 8,
-    img: 'https://github.com/LeandKa/Shop/blob/main/img/gif.gif?raw=true',
-    title: 'Shop',
-    git: 'https://github.com/LeandKa/Shop',
-    description:
-      'Projeto de uma simulação de Loja feitos o BackEnd e o FrontEnd Nodejs e Reactjs respectivamente'
+    img:
+      'https://camo.githubusercontent.com/d83088b2a604e5c3faf998426600a04be353c3bb11ecb051246118ab9e7a99ee/68747470733a2f2f692e6962622e636f2f4a6e53364235762f646f776e6c6f61642d342e706e67',
+    title: 'Pokedex',
+    git: 'https://github.com/LeandKa/Pokedex',
+    link: 'https://pokedex-93d2d.web.app/',
+    description: 'Simples projeto de pokedex usando integrada com a PokeApi'
   }
 ]
 
