@@ -64,11 +64,10 @@ export const Data = [
   },
   {
     id: 8,
-    img:
-      'https://camo.githubusercontent.com/d83088b2a604e5c3faf998426600a04be353c3bb11ecb051246118ab9e7a99ee/68747470733a2f2f692e6962622e636f2f4a6e53364235762f646f776e6c6f61642d342e706e67',
+    img: '/Img/pokedex.png',
     title: 'Pokedex',
-    git: 'https://github.com/LeandKa/Pokedex',
-    link: 'https://pokedex-93d2d.web.app/',
+    git: 'https://github.com/LeandKa/pokedex-dev',
+    link: 'https://main.d2mjp17kc7zpt6.amplifyapp.com/',
     description: 'Simples projeto de pokedex usando integrada com a PokeApi'
   }
 ]
