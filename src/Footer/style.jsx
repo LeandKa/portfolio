@@ -40,3 +40,10 @@ export const Div = style.div`
 export const Span = style.span`
   text-align:center;
 `
+
+export const Git = style.a`
+ color:white;
+ &:hover{
+   color:${({ theme }) => theme.colors.primary};
+ }
+`
